@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="html/css" href="styles.css">
     </head>
     <body>
-        <div class="card mx-auto mt-5" style="width: 90%;">
+        <div class="card mx-auto mt-5 mb-5" style="width: 90%;">
             <h3 class="card-header p-3">Payment form example</h3>
             <div class="card-body">
                 <div class="alert alert-danger mb-4" role="alert">
@@ -17,7 +17,7 @@
                 </div>
                 <form class="row g-4">
                     <div class="col-md-5">
-                        <label for="cardNumer" class="form-label">Card #</label>
+                        <label for="cardNumber" class="form-label">Card #</label>
                         <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX">
                     </div>
                     <div class="col-md-3">
@@ -25,10 +25,10 @@
                         <input type="text" class="form-control" id="cvcNumber" placeholder="0000">
                     </div>
                     <div class="col-md-4">
-                        <label for="Amount" class="form-label">Amount</label>
+                        <label for="amount" class="form-label">Amount</label>
                         <div class="input-group">
                             <div class="input-group-text border-0 bg-transparent ps-0 fw-semibold" style="width: 0px">$</div>
-                            <input type="text" class="form-control" id="Amount" placeholder="Amount">
+                            <input type="text" class="form-control" id="amount" placeholder="Amount">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -57,7 +57,7 @@
                     </div>
                     <div class="col-md-6">
                         <label for="cardSelect" class="form-label">We accept:</label>
-                        <div class="col-auto rounded bg-secondary ps-2 p-1 pe-0" style="width: 255px;">
+                        <div class="col-4 p-1 rounded bg-secondary">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="cardOptions" id="mastercard" value="option1" checked disabled>
                                 <label class="form-check-label" for="mastercard"><i class="fa-brands fa-cc-mastercard" style="color:#ffffff;"></i></label>
@@ -81,6 +81,8 @@
                         <textarea class="form-control" id="messageBox" style="height: 100px;" aria-describedby="messageNote"></textarea>
                         <div id="messageNote" class="form-text">Add any notes here.</div>
                     </div>
+                </form>
+            </div>    
             <div class="card-footer p-3 d-grid gap-2 d-md-flex justify-content-md-end">
                 <button type="button" class="btn btn-secondary">Cancel</button>
                 <button type="button" class="btn btn-primary">Send</button>
